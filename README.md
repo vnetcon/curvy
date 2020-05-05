@@ -29,3 +29,16 @@ In this example the "temp1" div is an template that will be filled with json val
 </script>  
 
 ```
+  
+## Quick start for Windows 64bit (Comming soon)
+This zip contains a local platform and tools for creating a curvy based web application and jdb-restserlvet based REST API. In after unzipping the file you have following ready configured applications wihtout installing anything
+* apache web server
+* postgdresql database
+* DBeaver for accessing the database and creating REST API using plain SQL
+* Tomcat web server for serving your REST API for web app.
+  
+All you need to have is your favorite IDE for editing files.
+  
+  
+
+
