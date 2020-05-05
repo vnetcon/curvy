@@ -7,16 +7,17 @@ Simple "nodeless" modular lightweight web framework. In other words a way to cre
 * SAP (Single Page Appliction) is emulated using session storage between page loads
   
 ## Example of "json mapping"
+In this example the "temp1" div is an template that will be filled with json valuse based on tags in template. The filled template will be placed to jsonvals div.
 
 ```html
 <div id="temp1" class="display: none">
-</div>
-
-<div id="jsonvals">
        Address: 
         <ljson-1 class="miki.address">
             <json class="miki.address[].street"></json>
         </ljson-1>
+</div>
+
+<div id="jsonvals">
 </div>
 
     <script>
