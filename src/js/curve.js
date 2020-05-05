@@ -51,3 +51,46 @@ mapJSON = function(templateid, targetid, json){
     tmp = mapChildNodes(tmp, c, json);
     document.getElementById(targetid).innerHTML = tmp;
 }
+
+
+uploadFile = function(fileinput, uploadrret) {
+    var file = document.querySelector('#' + fileinput).files[0];
+    var data = new FormData();
+    data.append('file', document.querySelector('#' + fileinput).files[0]);
+    var request = new XMLHttpRequest();
+    request.open('post', fileuploadurl); 
+    request.upload.addEventListener('progress', function(e) {
+	    var percent_complete = (e.loaded / e.total)*100;
+	    console.log(percent_complete);
+    });
+
+    // AJAX request finished event
+    request.addEventListener('load', function(e) {
+        // HTTP status message
+        console.log(request.status);
+        // request.response will hold the response from the server
+        console.log(request.response);
+        console.log("cleaning file input");
+        document.getElementById(fileinput).value = null;
+        uploadrret(request.response);
+    });
+
+    // send POST request to server side script    
+    request.send(data);
+}
+
+
+makeRequest = function(endpoint, fdata, callback) {
+    fetch(endpoint, {
+        headers: { "Content-Type": "application/x-www-form-urlencoded; charset=utf-8" },
+        method: 'post',
+        body: fdata
+    })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(data => callback(true, data))
+        .catch(e => callback(false, e));
+}
+
+
