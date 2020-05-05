@@ -22,6 +22,9 @@
         /* example of makeing post request
        reqresponse = function(success, data){
         alert("success: " + success);
+	if(success){
+	  mapJSON('template', 'targetdiv', data);
+	}
        }
 
        var data = new FormData();
