@@ -15,7 +15,7 @@ Simple "nodeless" modular lightweight web framework. In other words a way to cre
   
   
 ## Example of "json mapping"
-In this example the "temp1" div is an template that will be filled with json valuse based on tags in template. The filled template will be placed to jsonvals div.
+In this example the "temp1" div is an template that will be filled with json values based on tags in template. The filled template will be placed to jsonvals div.
 
 ```html
 <div id="temp1" class="display: none">
