@@ -4,7 +4,8 @@ Simple "nodeless" modular lightweight web framework. In other words a way to cre
 ## Key features:
 * simple html/javasctip based way to render json to html using html div based templates
 * simple server side based way to build the actual page from "page parts" using apache server side include (ssi)
-* SAP (Single Page Appliction) is emulated using session storage between page loads
+* SPA (Single Page Appliction) is emulated using session storage between page loads
+* For backend development (REST API) the quick start zip contains Postgresql and jdbc-restservlet (AGPL licensed) for creating the REST API using plain SQL.
   
 ## Example of "json mapping"
 In this example the "temp1" div is an template that will be filled with json valuse based on tags in template. The filled template will be placed to jsonvals div.
