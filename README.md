@@ -20,11 +20,9 @@ In this example the "temp1" div is an template that will be filled with json val
 <div id="jsonvals">
 </div>
 
-    <script>
-        var json = {miki: {fname: "Jhon", lname: ["lone", "ltwo", "lthree"], 
-        address : [{street : "Codingstreet 3"}]}}
-        mapJSON('temp1', 'jsonvals', json);
-    </script>  
-<scritp>
+<script>
+  var json = {miki: {fname: "Jhon", lname: ["lone", "ltwo", "lthree"], address : [{street : "Codingstreet 3"}]}}
+  mapJSON('temp1', 'jsonvals', json);
+</script>  
 
 ```
