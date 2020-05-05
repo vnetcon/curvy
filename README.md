@@ -41,6 +41,7 @@ This zip contains a local platform and tools for creating a curvy based web appl
 * postgdresql database 
 * DBeaver for accessing the database and creating REST API using plain SQL
 * Tomcat web server for serving your REST API for web app.
+* Hello World -application for helping you to get started (including database tables and rest endpoints based on sql)
   
 All you need to have is your favorite IDE for editing files.
   
