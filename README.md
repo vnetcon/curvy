@@ -4,7 +4,7 @@ Simple "nodeless" modular lightweight web framework. In other words a way to cre
 ## Key features:
 * simple html/javasctip based way to render json to html using html div based templates
 * simple server side based way to build the actual page from "page parts" using apache server side include (ssi)
-* SPA (Single Page Appliction) is emulated using session storage between page loads
+* SPA (Single Page Appliction) is emulated using session storage for storing json data between page loads
 * For backend development (REST API) the quick start zip contains Postgresql and jdbc-restservlet (AGPL licensed) for creating the REST API using plain SQL. jdbc-restservlet features
   * SQL based REST API endpoint development
   * build-in endpoint for uploading/downloading files to/from database
