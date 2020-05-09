@@ -41,6 +41,11 @@ In this example the "temp1" div is an template that will be filled with json val
 
 ```
   
+### Creating templates and mapping json to those
+The main idea in mapping JSON to HTML elements is to create an amepty hidden div that have "placehoders" that will be replaced with json values. There are two kind of placeholders:
+* <json class="path.to.json.element"></json> for single values
+* <ljsone class="<path>
+  
 ## Example of sql based REST API
 In this example we have a very simple sql as a rest endpoint sql
 
