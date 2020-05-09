@@ -72,8 +72,8 @@ html files are actually jsp pages so you can include other files into your html 
 
 ### Creating templates and mapping json to those
 The main idea in mapping JSON to HTML elements is to create an amepty hidden div that have "placehoders" that will be replaced with json values. There are two kind of placeholders:
-* <json class="path.to.json.element"></json> for single values
-* <ljsone class="<path>
+* \<json class="path.to.json.element"\>\</json\> for single values
+* \<ljson-uniqueid class="\> Your html template code here \</ljson-uniqueid\>
 
 
 ## Developing REST API
