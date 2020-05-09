@@ -107,13 +107,13 @@ where userid = '{r_userid}' --[json];
 In above example the subquery will be executed and it result will be converted to json on each row. If you want to list all users with contacts you can do it with following sql
 ```sql
 select 
-  userid as hidden_userid,
+  userid as myuserid,
   fname as "FirstName", 
   lname as "LastName",
-  'select contacttype, contactvalue from contact where userid = ''{t_hidden_userid}''' as subquery_contact
+  'select contacttype, contactvalue from contact where userid = ''{t_myuserid}''' as subquery_contact
 from users; 
 ```
-In above example the t_hidden_userid will be replaced on each row with value of hidden_userid and executed after that. The hidden_ prefix will remove the field from returend JSON.
+In above example the t_myuserid will be replaced on each row with value of hidden_userid and executed after that. In short the t_ prefix will point to "main query" field value in subquery.
 
 
 
