@@ -41,7 +41,7 @@ In this example the "temp1" div is an template that will be filled with json val
 ```
   
 ## Example of sql based REST API
-In this example we have a very simple as a rest endpoint
+In this example we have a very simple sql as a rest endpoint sql
 
 ```sql
 select 'Jhon' as "FirstName", 'Smith' as "LastName" --[json];
