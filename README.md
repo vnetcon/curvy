@@ -69,4 +69,14 @@ html files are actually jsp pages so you can include other files into your html 
 <jsp:include page="header.html" />
 ```
 
+## Developing REST API
+In short this is creating \*.sql or \*.rep (rest end point) files to your web application. The server will automatically process these files: Execute the sql and in select statements convert those to JSON. Below is a very simple sql that can be written into \'.sql or \*.rep file. When making calls, you just request the file just like any other files from web server.
+```sql
+select 'Jhon' as "FirstName", 'Smith' as "LastName" --[json];
+
+```
+
+
+
+
 
