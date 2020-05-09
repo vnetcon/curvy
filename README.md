@@ -94,6 +94,18 @@ select fname as "FirstName", lname as "LastName" from users where userid = '{r_u
 So you just add your parameter name with prefix r_ into sql statement between inside '{}' and thats it.
 
 ### Subqueries
+If you want to return in same JSON e.g. contact information as sub element in json you can do it by adding a subquery to your sql.
+```sql
+select 
+  fname as "FirstName", 
+  lname as "LastName",
+  'select contacttype, contactvalue from contact where userid = ''{r_userid}''' as subquery_contact
+from users 
+where userid = '{r_userid}' --[json];
+
+```
+
+
 
 
 
