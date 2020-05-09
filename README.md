@@ -131,6 +131,12 @@ You can configure your database connection setting to following file webapps/cur
 ### Configuring email settings for sending emails
 You can configure your email settings to following file webapps/curvy/WEB-INF/calsses/email.properties
 
+### Deploing to other java application servers
+You can create a zip file from the content of webapps/curvy folder and rename the zip to \*.war file. After that you can deploy the file to other tomcat or other application server that supports java web applications
+
+### Overriding setting
+database.properties and email.properties values can be overide by writing same files int /opt/vnetcon/conf directory. This can be usefull when deplooying the application to different environments.
+
 
 
 
