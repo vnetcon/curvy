@@ -74,6 +74,7 @@ html files are actually jsp pages so you can include other files into your html 
 The main idea in mapping JSON to HTML elements is to create an amepty hidden div that have "placehoders" that will be replaced with json values. There are two kind of placeholders:
 * \<json class="path.to.json.element"\>\</json\> for single values
 * \<ljson-uniqueid class="path.to.json.array.element"\> Your html template code here \</ljson-uniqueid\> for list of values
+  * In template code will be repeated as many times there are elements in array. To get the "index value" to template you need to add following element into your template code \<json class="path.to.json.array.element[]"\>\</json\>
   
 in js/curvy.js file there is a javascript method mapJSON that will take this template, read the fiven placeholders and replace those with values from given json. The result wil be placed to visible div.
 
