@@ -85,6 +85,16 @@ select 'Jhon' as "FirstName", 'Smith' as "LastName" --[json];
 
 ```
 
+### Paramters in SQL statements
+You can map your requests parameters to into your SQL statement by declaring them in following way in SQL. In following example we are expecting the get request parameter userid and we want to use it in SQL. 
+```sql
+select fname as "FirstName", lname as "LastName" from users where userid = '{r_userid}' --[json];
+
+```
+So you just add your parameter name with prefix r_ into sql statement between inside '{}' and thats it.
+
+### Subqueries
+
 
 
 
