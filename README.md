@@ -61,5 +61,12 @@ produce following json:in
 
 ```
 
+## Developing web application
+Under tomcat folder there is a subfolder webapps/curvy. In this folder you can write your html, css, javascript and other files. 
+html files are actually jsp pages so you can include other files into your html page easiy. E.g. if you have header, footer, menu etc. you can make own file from those and include those to actual pages. In this way modification e.g. in header will impact to all main files the header is included. The syntax if following
+
+```html
+<jsp:include page="header.html" />
+```
 
 
