@@ -38,9 +38,13 @@ select 'Jhon' as "FirstName", 'Smith' as "LastName" --[json];
 
 ```
   
-tuottaa seravan kaltaisen json:in 
+produce following json:in 
 ```json
-{ "results": [{"FirstName":"Jhon","LastName":"Smith"}]}
+{ "results": [
+  { "FirstName":"Jhon",
+    "LastName":"Smith"
+  }]
+}
 
 ```
 
