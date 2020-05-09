@@ -115,7 +115,8 @@ from users;
 ```
 In above example the t_myuserid will be replaced on each row with value of hidden_userid and executed after that. In short the t_ prefix will point to "main query" field value in subquery.
 
-
+### Updating multiple tables same time
+You can have multiple insert/update/delete statements in one file. In every file the SQL statement must end with ;. This apply to these too. Each of these statements will be executed within one transaction and will be rolled back on error. This way you can update 1-N tebles in one rest call.
 
 
 
