@@ -41,10 +41,6 @@ In this example the "temp1" div is an template that will be filled with json val
 
 ```
   
-### Creating templates and mapping json to those
-The main idea in mapping JSON to HTML elements is to create an amepty hidden div that have "placehoders" that will be replaced with json values. There are two kind of placeholders:
-* <json class="path.to.json.element"></json> for single values
-* <ljsone class="<path>
   
 ## Example of sql based REST API
 In this example we have a very simple sql as a rest endpoint sql
@@ -73,6 +69,12 @@ html files are actually jsp pages so you can include other files into your html 
 ```html
 <jsp:include page="header.html" />
 ```
+
+### Creating templates and mapping json to those
+The main idea in mapping JSON to HTML elements is to create an amepty hidden div that have "placehoders" that will be replaced with json values. There are two kind of placeholders:
+* <json class="path.to.json.element"></json> for single values
+* <ljsone class="<path>
+
 
 ## Developing REST API
 In short this is creating \*.sql or \*.rep (rest end point) files to your web application. The server will automatically process these files: Execute the sql and in select statements convert those to JSON. Below is a very simple sql that can be written into \'.sql or \*.rep file. When making calls, you just request the file just like any other files from web server.
