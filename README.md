@@ -120,6 +120,39 @@ In above example the t_myuserid will be replaced on each row with value of hidde
 ### Updating multiple tables same time
 You can have multiple insert/update/delete statements in one file. In every file the SQL statement must end with ;. This apply to these too. Each of these statements will be executed within one transaction and will be rolled back on error. This way you can update 1-N tebles in one rest call.
 
+### making REST API requests from javascript
+Below are couple of simple example of making 
+
+```javascript
+// ajax call for retrieving data from dataabse
+click_AjaxCall(){
+    var d = new FormData();
+    d.append("paramname", 'paramvalue'); // the paramname in sql should be following '{r_paramname}'. This will be replaced with the value put here.
+    makeRequest(appdataurl + "/endpoin", d, click_AjaxCallReply);
+}
+
+// handle retrieved data here
+clic_AjaxCallReply(success, data){
+    console.log("reply: " + success);
+}
+
+// ajax call for sending email
+sendEmail(){
+    var msg = "Message in html format";
+    var d = new FormData();
+    d.append('email', 'to-aimail-address');
+    d.append('subject', 'Subject for email');
+    d.append('message', msg);
+    makeRequest(appdataurl + "/email", d, sendEmaillReply);
+}
+
+// handle email send reply here
+sendEmailReply(success, data){
+}
+
+
+```
+
 ## Configurations
 
 ### Adding new database driver
