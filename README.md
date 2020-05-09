@@ -6,6 +6,8 @@ Key features:
 * Build your app using plain html/css/javascript or frameworks like Angular, React, Vue etc.
 * Map json to html elements with one method
 * Create REST API using plain sql files
+* built-in endpoint for sending html emails
+* built-in endpoints for saving and retrieving files to/from database
     
 ## Quick start (comming soon)
 To get started
@@ -117,6 +119,20 @@ In above example the t_myuserid will be replaced on each row with value of hidde
 
 ### Updating multiple tables same time
 You can have multiple insert/update/delete statements in one file. In every file the SQL statement must end with ;. This apply to these too. Each of these statements will be executed within one transaction and will be rolled back on error. This way you can update 1-N tebles in one rest call.
+
+## Configurations
+
+### Adding new database driver
+You can add your database driver (JDBC) into following folder: webapps/curvy/WEB-INF/lib
+
+### Configuring database connection
+You can configure your database connection setting to following file webapps/curvy/WEB-INF/classes/database.properties
+
+### Configuring email settings for sending emails
+You can configure your email settings to following file webapps/curvy/WEB-INF/calsses/email.properties
+
+
+
 
 
 
