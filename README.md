@@ -1,20 +1,15 @@
 # curvy
-Simple "nodeless" modular lightweight web framework. In other words a way to create modular web applications without heavy frameworks like react, angular etc.
+Curvy is an easy full stack web application development environment. 
   
-## Key features:
-* simple html/javasctip based way to render json to html using html div based templates
-* simple server side based way to build the actual page from "page parts" using apache server side include (ssi)
-* SPA (Single Page Appliction) is emulated using session storage for storing json data between page loads
-* For backend development (REST API) the quick start zip contains Postgresql and [jdbc-restservlet](https://github.com/vnetcon/jdbc-restservlet) (AGPL licensed) for creating the REST API using plain SQL. jdbc-restservlet features
-  * SQL based REST API endpoint development
-  * build-in endpoint for uploading/downloading files to/from database
-  * build-in eandpoing for sending HTML emails
-  * build-in logging for all requests to database (select/insert/update/delete)
-* ready function for making http requests
+Key features:
+  
+* Build your app using plain html/css/javascript or frameworks like Angular, React, Vue etc.
+* Map json to html elements with one method
+* Create REST API using plain sql files
+    
   
   
-  
-## Example of "json mapping"
+## Example of mapping json to html
 In this example the "temp1" div is an template that will be filled with json values based on tags in template. The filled template will be placed to jsonvals div.
 
 ```html
@@ -35,16 +30,19 @@ In this example the "temp1" div is an template that will be filled with json val
 
 ```
   
-## Quick start for Windows 64bit (Comming soon)
-This zip contains a local platform and tools for creating a curvy based web application and jdb-restserlvet based REST API. In after unzipping the file you have following ready configured applications wihtout installing anything
-* apache web server for serving your html (shtml for ssi) pages
-* postgdresql database 
-* DBeaver for accessing the database and creating REST API using plain SQL
-* Tomcat web server for serving your REST API for web app.
-* Hello World -application for helping you to get started (including database tables and rest endpoints based on sql)
+## Example of sql based REST API
+In this example we have a very simple as a rest endpoint
+
+```sql
+select 'Jhon' as "FirstName", 'Smith' as "LastName" --[json];
+
+```
   
-All you need to have is your favorite IDE for editing files.
-  
-  
+tuottaa seravan kaltaisen json:in 
+```json
+{ "results": [{"FirstName":"Jhon","LastName":"Smith"}]}
+
+```
+
 
 
