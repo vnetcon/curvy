@@ -15,9 +15,10 @@ To get started
 
 Before you can start the actual development you must
 * have java installed on your computer
+  * For windows you can download free openjdk java from https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html
+  * For linux you can use apt-get install <openjdk java version you want> or yum install <openjdk version you want>
 * configure database connection and crete required "system tables" there
   
-TODO: Write instructions for these
   
 ## Example of mapping json to html
 In this example the "temp1" div is an template that will be filled with json values based on tags in template. The filled template will be placed to jsonvals div.
