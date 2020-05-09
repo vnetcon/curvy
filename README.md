@@ -7,7 +7,17 @@ Key features:
 * Map json to html elements with one method
 * Create REST API using plain sql files
     
+## Quick start (comming soon)
+To get started
+1. Clone the repositoery
+2. Move to tomcat9 folder
+3. Run 3_StartTomcat8.bat on windows, 3_StartTomcat8.sh on linux. (chmod 755 ./3_StartTomcat8.bat if tomcat not started)
+
+Before you can start the actual development you must
+* have java installed on your computer
+* configure database connection and crete required "system tables" there
   
+TODO: Write instructions for these
   
 ## Example of mapping json to html
 In this example the "temp1" div is an template that will be filled with json values based on tags in template. The filled template will be placed to jsonvals div.
