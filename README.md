@@ -73,8 +73,9 @@ html files are actually jsp pages so you can include other files into your html 
 ### Creating templates and mapping json to those
 The main idea in mapping JSON to HTML elements is to create an amepty hidden div that have "placehoders" that will be replaced with json values. There are two kind of placeholders:
 * \<json class="path.to.json.element"\>\</json\> for single values
-* \<ljson-uniqueid class="\> Your html template code here \</ljson-uniqueid\>
-
+* \<ljson-uniqueid class="path.to.json.array.element"\> Your html template code here \</ljson-uniqueid\> for list of values
+  
+in js/curvy.js file there is a javascript method mapJSON that will take this template, read the fiven placeholders and replace those with values from given json. The result wil be placed to visible div.
 
 ## Developing REST API
 In short this is creating \*.sql or \*.rep (rest end point) files to your web application. The server will automatically process these files: Execute the sql and in select statements convert those to JSON. Below is a very simple sql that can be written into \'.sql or \*.rep file. When making calls, you just request the file just like any other files from web server.
