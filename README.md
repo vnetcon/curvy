@@ -50,10 +50,12 @@ select 'Jhon' as "FirstName", 'Smith' as "LastName" --[json];
   
 produce following json:in 
 ```json
-{ "results": [
+{ "results": 
+ [
   { "FirstName":"Jhon",
     "LastName":"Smith"
-  }]
+  }
+ ]
 }
 
 ```
