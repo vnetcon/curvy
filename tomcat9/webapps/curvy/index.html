@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <script src="js/curvy.js"></script>
+    </head>
+<body>
+<jsp:include page="header.html"/>
+
+<div id="template1" style="display:none;">
+
+    Table:
+    <table_curvy>
+        <ljson-id2 class="results">
+            <tr_curvy>
+            <td_curvy> <json class="results[].User.LastName"></json> </td_curvy>
+            <td_curvy> <json class="results[].User.FirstName"></json> </td_curvy>
+            </tr_curvy>
+        </ljson-id2>
+    </table_curvy>
+    <br><br>
+
+    <ljson-id1 class="results">
+        <br>
+        <json class="results[].User.LastName"></json>, 
+        <json class="results[].User.FirstName"></json>
+    </ljson-id1>
+
+    <br>
+    
+
+</div>
+
+<div id="table1">
+</div>
+
+<script>
+    mapUsers = function(success, data){
+        //console.log("reply: " + success);
+        //console.log("data: " + JSON.stringify(data));
+        mapJSON('template1', 'table1', data);
+    }       
+
+    var d = new FormData();
+    makeRequest('http://localhost:8080/curvy/rest/default/v1/getUsers.sql', d, mapUsers);
+</script>
+
+</body>
+</html>
