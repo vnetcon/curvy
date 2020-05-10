@@ -19,6 +19,9 @@ To get started
   5.1 http://localhost:8080/curvy/ to see the web application  
   5.2 http://localhost:8080/curvy/rest/default/v1/test.sql to see the demo REST API json
   
+The quick start contains fully working very simple example of loading data from database and mapping json to table.
+  
+  
 On linux and mac machinges you need to install first java and set JAVA_HOME and JRE_HOME environment variablse. If you are developing  against postgresql database you need install it too and create necessary tables into it. You can finde these statements from db/pg-dbcreate.sql file. After database intallation you can configure your database connection information to tomcat9\webapps\curvy\WEB-INF\classes\database.properties file.
   
   
