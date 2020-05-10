@@ -9,7 +9,7 @@ Key features:
 * built-in endpoint for sending html emails
 * built-in endpoints for saving and retrieving files to/from database
     
-## Quick start on windows 64 (comming soon)
+## Quick start on windows 64 
 To get started
 1. clone the repositoery
 2. run 1_StartPostgreSQL.bat in cloned curvy folder. This will start postgresql database
