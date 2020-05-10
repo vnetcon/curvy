@@ -78,7 +78,7 @@ The main idea in mapping JSON to HTML elements is to create an amepty hidden div
 * **\<ljson-uniqueid class="path.to.json.array.element"\>** Your html template code here **\</ljson-uniqueid\>** for list of values
   * In template code will be repeated as many times there are elements in array. To get the "index value" to template you need to add following element into your template code **\<json class="path.to.json.array.element[]"\>\</json\>**
   
-in js/curvy.js file there is a javascript method mapJSON that will take this template, read the fiven placeholders and replace those with values from given json. The result wil be placed to visible div.
+in js/curvy.js file there is a javascript method mapJSON that will take this template, read the placeholders and replace those with values from given json. The result wil be placed to visible div.
 
 ## Developing REST API
 In short this is creating \*.sql or \*.rep (rest end point) files to your web application. The server will automatically process these files: Execute the sql and in select statements convert those to JSON. Below is a very simple sql that can be written into \'.sql or \*.rep file. When making calls, you just request the file just like any other files from web server.
