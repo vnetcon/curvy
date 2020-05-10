@@ -13,7 +13,7 @@ Key features:
 To get started
 1. Clone the repositoery
 2. Move to tomcat9 folder
-3. Run 3_StartTomcat8.bat on windows, 3_StartTomcat8.sh on linux. (chmod 755 ./3_StartTomcat8.bat if tomcat not started)
+3. Run 3_StartTomcat8.bat on windows, 3_StartTomcat8.sh on linux. (chmod 755 ./3_StartTomcat8.bat if tomcat wont start)
 
 Before you can start the actual development you must
 * have java installed on your computer
