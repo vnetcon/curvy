@@ -171,6 +171,18 @@ You can create a zip file from the content of webapps/curvy folder and rename th
 database.properties and email.properties values can be overide by writing same files int /opt/vnetcon/conf directory. This can be usefull when deplooying the application to different environments.
 
 
+## Building
+Curvy is built on following components:
+* [jdbc-rest](https://github.com/vnetcon/jdbc-rest): A JDBC driver for connecting to databases and converting SELECT statements to JSON
+* [jdbc-restservlet](https://github.com/vnetcon/jdbc-restservlet): REST-API engine build on jdbc-rest
+* Tomcat 9 web server
+  
+To build all from scrach you need to 
+1. Clone jdbc-rest and build it
+2. Clone jdbc-restservlet and build it
+3. Download tomcat
+4. Deploy the war file that have been generated duting step 2 to tomcat
+
 
 
 
