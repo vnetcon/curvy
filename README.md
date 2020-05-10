@@ -90,6 +90,9 @@ After you have publish your web app you can paste it to tomcat9\webapps\curvy fo
 
 
 in js/curvy.js file there is a javascript method mapJSON that will take this template, read the placeholders and replace those with values from given json. The result wil be placed to visible div.
+  
+### SPA (Single Page Application) emulation
+If your web app have several pages you can emulate the SPA by storing json data to session storage and retrieve it from there during the page load and render "state" information to loaded page.
 
 ## Developing REST API
 In short this is creating \*.sql or \*.rep (rest end point) files to your web application. The server will automatically process these files: Execute the sql and in select statements convert those to JSON. Below is a very simple sql that can be written into \'.sql or \*.rep file. When making calls, you just request the file just like any other files from web server.
