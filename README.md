@@ -91,6 +91,9 @@ select fname as "FirstName", lname as "LastName" from users where userid = '{r_u
 
 ```
 So you just add your parameter name with prefix r_ into sql statement between inside '{}' and thats it.
+  
+  
+Note! Parameters will hava also all the http header values. In short this mean that if you have for example username in http headers you can use it as r_username parameter in your sql statements.
 
 ### Subqueries
 If you want to return in same JSON e.g. contact information as sub element in json you can do it by adding a subquery to your sql.
