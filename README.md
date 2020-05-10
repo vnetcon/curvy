@@ -129,7 +129,7 @@ In above example the t_myuserid will be replaced on each row with value of hidde
 You can have multiple insert/update/delete statements in one file. In every file the SQL statement must end with ;. This apply to these too. Each of these statements will be executed within one transaction and will be rolled back on error. This way you can update 1-N tebles in one rest call.
 
 ### About \*.sql and/or \*.rep files location
-These files must locate under following folder structure: <path you want>/<database.properties file prefix>/<version>/[\*.sql | \*.rep]
+These files must locate under following folder structure: \<path you want\>/\<database.properties file prefix\>/\<version\>/[\*.sql | \*.rep]
    
 example: rest\admin\default\v1\updateuser.sql
 
