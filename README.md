@@ -9,17 +9,14 @@ Key features:
 * built-in endpoint for sending html emails
 * built-in endpoints for saving and retrieving files to/from database
     
-## Quick start (comming soon)
+## Quick start on windows 64 (comming soon)
 To get started
-1. Clone the repositoery
-2. Move to tomcat9 folder
-3. Run 3_StartTomcat8.bat on windows, 3_StartTomcat8.sh on linux. (chmod 755 ./3_StartTomcat8.bat if tomcat wont start)
-
-Before you can start the actual development you must
-* have java installed on your computer
-  * For windows you can download free openjdk java from https://docs.aws.amazon.com/corretto/latest/corretto-8-ug/downloads-list.html
-  * For linux you can use apt-get install <openjdk java version you want> or yum install <openjdk version you want>
-* configure database connection and crete required "system tables" there
+1. clone the repositoery
+2. run 1_StartPostgreSQL.bat in cloned curvy folder. This will start postgresql dataabse
+3. run 2_StartTomcat9.bat in cloned curvy folder. This will start tomcat 9 web server
+4. start develop your web application. Create and edit your html, css, javascript, rest sql files etc. in tomcat9\webapps\curvy folder
+  
+On linux and mac machinges you need to install first java and set JAVA_HOME and JRE_HOME environment variablse. If you are developing  against postgresql database you need install it too and create necessary tables into it. You can finde these statements from db/pg-dbcreate.sql file. After database intallation you can configure your database connection information to tomcat9\webapps\curvy\WEB-INF\classes\database.properties file.
   
   
 ## Example of mapping json to html
