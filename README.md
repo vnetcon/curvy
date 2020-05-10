@@ -12,7 +12,7 @@ Key features:
 ## Quick start on windows 64 (comming soon)
 To get started
 1. clone the repositoery
-2. run 1_StartPostgreSQL.bat in cloned curvy folder. This will start postgresql dataabse
+2. run 1_StartPostgreSQL.bat in cloned curvy folder. This will start postgresql database
 3. run 2_StartTomcat9.bat in cloned curvy folder. This will start tomcat 9 web server
 4. start develop your web application. Create and edit your html, css, javascript, rest sql files etc. in tomcat9\webapps\curvy folder
   
