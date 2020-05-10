@@ -192,7 +192,9 @@ To build all from scrach you need to
 1. Clone jdbc-rest and build it
 2. Clone jdbc-restservlet and build it
 3. Download tomcat
-4. Deploy the war file that have been generated duting step 2 to tomcat
+4. Deploy the war file that have been generated during step 2 to tomcat
+  
+For building you need to have java sdk and maven installed.
 
 ## Problems
 At least for me tomcat failes every now and then in file processing and start to produce strange errors for reason I haven't been able to figure out yet. To get overe this you must stop tomcat, clean tomcat9\temp and tomcat9\work folders and start tomcat again. Sometimes you might need to do this several time.
