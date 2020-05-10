@@ -74,7 +74,15 @@ The main idea in mapping JSON to HTML elements is to create an amepty hidden div
 * **\<json class="path.to.json.element"\>\</json\>** for single values
 * **\<ljson-uniqueid class="path.to.json.array.element"\>** Your html template code here **\</ljson-uniqueid\>** for list of values
   * In template code will be repeated as many times there are elements in array. To get the "index value" to template you need to add following element into your template code **\<json class="path.to.json.array.element[]"\>\</json\>**
+
+### Developing angular, react, vue etc. apps that have they own development server during the development time.
+In these cases you might want to 
+1. Create proxy configuration that allow you to access the curvy rest api from your development environment 
+2. Install a browser plugin that allow yout to access the curvy rest api from your development environment
   
+After you have publish your web app you can paste it to tomcat9\webapps\curvy folder. After this you have your web app and rest api running on same web server.
+
+
 in js/curvy.js file there is a javascript method mapJSON that will take this template, read the placeholders and replace those with values from given json. The result wil be placed to visible div.
 
 ## Developing REST API
