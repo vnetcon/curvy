@@ -16,8 +16,8 @@ To get started
 3. run 2_StartTomcat9.bat in cloned curvy folder. This will start tomcat 9 web server
 4. start develop your web application. Create and edit your html, css, javascript, rest sql files etc. in tomcat9\webapps\curvy folder
 5. Point your broser to
-  * http://localhost:8080/curvy/ to see the web application
-  * http://localhost:8080/curvy/rest/default/v1/test.sql to see the demo REST API json
+  5.1 http://localhost:8080/curvy/ to see the web application
+  5.2 http://localhost:8080/curvy/rest/default/v1/test.sql to see the demo REST API json
   
 On linux and mac machinges you need to install first java and set JAVA_HOME and JRE_HOME environment variablse. If you are developing  against postgresql database you need install it too and create necessary tables into it. You can finde these statements from db/pg-dbcreate.sql file. After database intallation you can configure your database connection information to tomcat9\webapps\curvy\WEB-INF\classes\database.properties file.
   
