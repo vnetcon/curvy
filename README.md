@@ -150,8 +150,11 @@ sendEmail(){
 sendEmailReply(success, data){
 }
 
-
 ```
+
+### Authenitcation
+In curvy the main idea is to leave this for apache http server. You can us apache as proxy server to your curvy app and secure wanted folder in apache. Apache offer ready authentication modules for OpenID, SAML and LDAP. Apache won't let users to enter to secured folder if they cannot authenticte. After successful authentication your can access the userinformatin from header. These headers you can use like any other parameters in your sql statements.
+
 
 ## Configurations
 
