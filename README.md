@@ -229,6 +229,8 @@ oracle.upload.tmp=/tmp
 ```
 To make your REST API calls to use oracle connection you must modify the file location. Example default/v1/restcall.sql -> oracle/v1/restcall.sql. In short the first element in this path must be equal to prefix in database.properties file.
 
+### Managing REST-API endpoints in database
+It is also possible to manage all or part of the rest endpoint sql statements in database instead  of files. For this you can find aout more information at https://github.com/vnetcon/jdbc-restservlet
 
 ### Configuring email settings for sending emails
 You can configure your email settings to following file webapps/curvy/WEB-INF/calsses/email.properties
