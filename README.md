@@ -84,6 +84,13 @@ The main idea in mapping JSON to HTML elements is to create an amepty hidden div
 #### Template generation for creating table rows, list rows, options selects etc.
 For this kind of you need to modify little bit used tags (e.g. table -> table_curvy, tr -> tr_curvy etc.). The reason for this is that javascript don't return tr etc. elements if they are inside \<ljson-xxx tag - most likely because from standard html these looks like "broken" or "invalid" tags. By adding  \*\_curvy after after tag name this problem disappears. In curvy.js file these are automatically removed.
 
+### Built-in endpoint
+Curvy has three bult-in endpoints. One for uploading files, one for downloading uploaded files and one for sending email. The endpoints for these are
+
+* file upload: default/v1/upload
+* file download: default/v1/download?fileid=<imageid generated during upload>
+* email send: default/v1/email
+
 ### Developing angular, react, vue etc. apps that have they own development server during the development time.
 In these cases you might want to 
 1. Create proxy configuration that allow you to access the curvy rest api from your development environment 
