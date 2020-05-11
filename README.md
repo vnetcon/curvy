@@ -82,7 +82,7 @@ The main idea in mapping JSON to HTML elements is to create an amepty hidden div
 * **\<ljson-uniqueid class="path.to.json.array.element"\>** Your html template code here **\</ljson-uniqueid\>** for list of values
   * In template code will be repeated as many times there are elements in array. To get the "index value" to template you need to add following element into your template code **\<json class="path.to.json.array.element[]"\>\</json\>**
 
-#### Template generation for creating table rows, list rows, options selects etc.
+#### Template generation for creating table rows, list elements, select options etc.
 For this kind of you need to modify little bit used tags (e.g. table -> table_curvy, tr -> tr_curvy etc.). The reason for this is that javascript don't return tr etc. elements if they are inside \<ljson-xxx tag - most likely because from standard html these looks like "broken" or "invalid" tags. By adding  \*\_curvy after after tag name this problem disappears. In curvy.js file these are automatically removed.
 
 ### Built-in endpoint
