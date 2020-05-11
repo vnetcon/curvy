@@ -89,7 +89,7 @@ For this kind of you need to modify little bit used tags (e.g. table -> table_cu
 Curvy has three bult-in endpoints. One for uploading files, one for downloading uploaded files and one for sending email. The endpoints for these are
 
 * file upload: default/v1/upload
-* file download: default/v1/download?fileid=<imageid generated during upload>
+* file download: default/v1/download?fileid=\<fileid generated during upload\>
 * email send: default/v1/email
 
 ### Developing angular, react, vue etc. apps that have they own development server during the development time.
