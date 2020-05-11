@@ -21,6 +21,7 @@ To get started
   
 The quick start contains fully working very simple example of loading data from database and mapping json to table.
   
+You also need to have some database client application for accessing the database (create tables, browse data etc.). For this we like to use [DBeaver](https://dbeaver.io/) - just in case if you thinking what to use.
   
 On linux and mac machinges you need to install first java and set JAVA_HOME and JRE_HOME environment variablse. If you are developing  against postgresql database you need install it too and create necessary tables into it. You can finde these statements from db/pg-dbcreate.sql file. After database intallation you can configure your database connection information to tomcat9\webapps\curvy\WEB-INF\classes\database.properties file.
   
