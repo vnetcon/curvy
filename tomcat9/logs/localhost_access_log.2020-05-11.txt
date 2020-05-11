@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:30:28 +0300] "GET /curvy/ HTTP/1.1" 200 1209
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:30:28 +0300] "GET /curvy/js/curvy.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:30:30 +0300] "POST /curvy/rest/default/v1/getUsers.sql HTTP/1.1" 200 218
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:30:40 +0300] "GET /jdbc-rest/rest/default/getUser/v1?userid=3 HTTP/1.1" 404 758
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:30:55 +0300] "GET /curvy/ HTTP/1.1" 200 1209
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:31:01 +0300] "GET /curvy/rest/default/v1/getUsers.sql HTTP/1.1" 200 218
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:03 +0300] "GET /curvy/ HTTP/1.1" 200 1209
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:03 +0300] "GET /curvy/js/curvy.js HTTP/1.1" 200 3715
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:03 +0300] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:03 +0300] "POST /curvy/rest/default/v1/getUsers.sql HTTP/1.1" 200 218
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:06 +0300] "GET /curvy/ HTTP/1.1" 200 1209
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:06 +0300] "GET /curvy/js/curvy.js HTTP/1.1" 200 3715
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:06 +0300] "GET /favicon.ico HTTP/1.1" 200 21630
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:06 +0300] "POST /curvy/rest/default/v1/getUsers.sql HTTP/1.1" 200 218
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:16 +0300] "GET /curvy/ HTTP/1.1" 200 1209
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:16 +0300] "GET /curvy/js/curvy.js HTTP/1.1" 200 3715
+0:0:0:0:0:0:0:1 - - [11/May/2020:06:32:17 +0300] "POST /curvy/rest/default/v1/getUsers.sql HTTP/1.1" 200 218

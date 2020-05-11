@@ -46,10 +46,8 @@ mapChildNodes = function(text, c, json){
         }
     }
 
-    tmp = tmp.replace(/tr_curvy/g, 'tr');
-    tmp = tmp.replace(/td_curvy/g, 'td');
-    tmp = tmp.replace(/table_curvy/g, 'table');
-    return tmp;
+   tmp = tmp.replace(/_curvy/g, '');
+   return tmp;
 }
 
 mapJSON = function(templateid, targetid, json){
