@@ -198,6 +198,37 @@ You can add your database driver (JDBC) into following folder: webapps/curvy/WEB
 ### Configuring database connection
 You can configure your database connection setting to following file webapps/curvy/WEB-INF/classes/database.properties
 
+### Using multiple databases in one web application
+You can configure 1-N databases (even different like Postgresql, Oracle, SQL Server etc.) to database.properties file. In default properties file you can find following properties
+
+```properties
+default.jdbc.driver=org.postgresql.Driver
+default.jdbc.url=jdbc:postgresql://localhost:5432/postgres
+default.jdbc.user=postgres
+default.jdbc.pass=postgres
+default.jdbc.logcon=default
+default.upload.tmp=/tmp
+```
+If you want to add for exasmple oracle connection to you can modify the database.properties file to following
+```properties
+default.jdbc.driver=org.postgresql.Driver
+default.jdbc.url=jdbc:postgresql://localhost:5432/postgres
+default.jdbc.user=postgres
+default.jdbc.pass=postgres
+default.jdbc.logcon=default
+default.upload.tmp=/tmp
+
+oracle.jdbc.driver=<oracle.driver.class>
+oracle.jdbc.url=j<oracle jdbc url>
+oracle.jdbc.user=<username>
+oracle.jdbc.pass=<password>
+oracle.jdbc.logcon=<into what database you want request loggint to be written>
+oracle.upload.tmp=/tmp
+
+```
+To make your REST API calls to use oracle connection you must modify the file location. Example default/v1/restcall.sql -> oracle/v1/restcall.sql. In short the first element in this path must be equal to prefix in database.properties file.
+
+
 ### Configuring email settings for sending emails
 You can configure your email settings to following file webapps/curvy/WEB-INF/calsses/email.properties
 
