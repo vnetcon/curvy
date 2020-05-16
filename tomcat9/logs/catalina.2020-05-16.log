@@ -1,0 +1,35 @@
+16-May-2020 06:41:03.861 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.34
+16-May-2020 06:41:03.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Apr 3 2020 12:02:52 UTC
+16-May-2020 06:41:03.864 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.34.0
+16-May-2020 06:41:03.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+16-May-2020 06:41:03.865 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+16-May-2020 06:41:03.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-May-2020 06:41:03.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\miki\vnetcon\development\curvy\win64-jre8
+16-May-2020 06:41:03.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_252-b09
+16-May-2020 06:41:03.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Amazon.com Inc.
+16-May-2020 06:41:03.866 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\miki\vnetcon\development\curvy\tomcat9
+16-May-2020 06:41:03.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\miki\vnetcon\development\curvy\tomcat9
+16-May-2020 06:41:03.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\miki\vnetcon\development\curvy\tomcat9\conf\logging.properties
+16-May-2020 06:41:03.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-May-2020 06:41:03.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-May-2020 06:41:03.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-May-2020 06:41:03.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dignore.endorsed.dirs=
+16-May-2020 06:41:03.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\miki\vnetcon\development\curvy\tomcat9
+16-May-2020 06:41:03.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\miki\vnetcon\development\curvy\tomcat9
+16-May-2020 06:41:03.871 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\miki\vnetcon\development\curvy\tomcat9\temp
+16-May-2020 06:41:03.875 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\miki\vnetcon\development\curvy\win64-jre8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;win64-jre8\bin;C:\Program Files\AdoptOpenJDK\jdk-8.0.242.08-hotspot\bin;C:\miki\oracle\WINDOWS.X64_193000_db_home\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Git\cmd;C:\Users\35840\AppData\Local\Microsoft\WindowsApps;C:\Users\35840\.dotnet\tools;C:\Users\35840\AppData\Local\Microsoft\WindowsApps;;C:\Users\35840\AppData\Local\Programs\Microsoft VS Code\bin;.]
+16-May-2020 06:41:04.113 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+16-May-2020 06:41:04.542 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [863] milliseconds
+16-May-2020 06:41:04.574 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-May-2020 06:41:04.575 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.34]
+16-May-2020 06:41:04.600 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [C:\miki\vnetcon\development\curvy\tomcat9\webapps\curvy.war]
+16-May-2020 06:41:05.308 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+16-May-2020 06:41:05.373 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\miki\vnetcon\development\curvy\tomcat9\webapps\curvy.war] has finished in [773] ms
+16-May-2020 06:41:05.374 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [C:\miki\vnetcon\development\curvy\tomcat9\webapps\ROOT]
+16-May-2020 06:41:05.407 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\miki\vnetcon\development\curvy\tomcat9\webapps\ROOT] has finished in [33] ms
+16-May-2020 06:41:05.412 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+16-May-2020 06:41:05.427 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [884] milliseconds
+16-May-2020 09:45:09.024 INFO [Thread-4] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+16-May-2020 09:45:09.582 INFO [Thread-4] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-May-2020 09:45:09.602 INFO [Thread-4] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+16-May-2020 09:45:09.605 INFO [Thread-4] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
