@@ -3,11 +3,17 @@ Curvy is an easy full stack web application development environment.
   
 Key features:
   
-* Build your app using plain html/css/javascript or frameworks like Angular, React, Vue etc.
+* Build your app using plain html/css/javascript (e.g. Bootsrap) or frameworks like Angular, React, Vue etc.
 * Map json to html elements with one method
 * Create REST API using plain sql files
-* built-in endpoint for sending html emails
+* Enables a modular way to create SPA (Single Page Application) applicatons with Bootstrap
+* built-in endpoint for sending html emails 
 * built-in endpoints for saving and retrieving files to/from database
+    
+Below is a screenshot of the real Bootstrap SPA example served by Curvy. This example can be found from source code.
+  
+![curvy-spa](http://vnetcon.s3-website-eu-west-1.amazonaws.com/img/curvy-spa.png)
+
     
 ## Quick start on windows 64 
 To get started
@@ -46,7 +52,9 @@ In this example the "temp1" div is an template that will be filled with json val
 </script>  
 
 ```
-  
+
+
+in js/curvy.js file there is a javascript method mapJSON that will take this template, read the placeholders and replace those with values from given json. The result wil be placed to visible div.
   
 ## Example of sql based REST API
 In this example we have a very simple sql as a rest endpoint sql
@@ -99,11 +107,24 @@ In these cases you might want to
   
 After you have publish your web app you can paste it to tomcat9\webapps\curvy folder. After this you have your web app and rest api running on same web server.
 
-
-in js/curvy.js file there is a javascript method mapJSON that will take this template, read the placeholders and replace those with values from given json. The result wil be placed to visible div.
   
 ### SPA (Single Page Application) emulation
 If your web app have several pages you can emulate the SPA by storing json data to session storage and retrieve it from there during the page load and render "state" information to loaded page.
+
+### Real SPA with Bootstrap
+We like to use bootstrap because of it's good support for creating responsive applicationa. For creating SAP apps with bootstrap we use the "old trick" where "pages" are in divs and navigating is only hiding and showing these divs. The "messy part" in this is that all the divs should be in one page. In Curvy you can manage these divs in own files and include those to main page. 
+  
+In the spa example there are three files
+* index.html that includes sidebar.html. 
+* sidebar.html. This takes care of hiding/showing divs that are included in this file
+* home-content.html. An example file that is included in sidebar.html
+* about-content.html. An other example file that is included in sidebar.html
+  
+Below is a screenshot of this example. If you have clone Curvy and start the tomcat you can pont your broser at http://localhost:8080/curvy/examples/bs3/
+
+![curvy-spa](http://vnetcon.s3-website-eu-west-1.amazonaws.com/img/curvy-spa.png)
+
+
 
 ## Developing REST API
 In short this is creating \*.sql or \*.rep (rest end point) files to your web application. The server will automatically process these files: Execute the sql and in select statements convert those to JSON. Below is a very simple sql that can be written into \'.sql or \*.rep file. When making calls, you just request the file just like any other files from web server.
