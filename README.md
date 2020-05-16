@@ -116,7 +116,7 @@ We like to use bootstrap because of it's good support for creating responsive ap
   
 In the spa example there are three files
 * index.html that includes sidebar.html. 
-* sidebar.html. This takes care of hiding/showing divs that are included in this file
+* sidebar.html. This takes care of hiding/showing divs that are included in this file. To keep demo simple this file includes all the css, html and javascript code.
 * home-content.html. An example file that is included in sidebar.html
 * about-content.html. An other example file that is included in sidebar.html
   
