@@ -1,6 +1,8 @@
 # curvy
 Curvy is an easy full stack web application development environment. 
   
+The easiest way to get back here again is to search "full stack curvy".
+  
 Key features:
   
 * Build your app using plain html/css/javascript (e.g. Bootsrap) or frameworks like Angular, React, Vue etc.
