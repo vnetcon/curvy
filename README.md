@@ -112,7 +112,7 @@ After you have publish your web app you can paste it to tomcat9\webapps\curvy fo
 If your web app have several pages you can emulate the SPA by storing json data to session storage and retrieve it from there during the page load and render "state" information to loaded page.
 
 ### Real SPA with Bootstrap
-We like to use bootstrap because of it's good support for creating responsive applicationa. For creating SAP apps with bootstrap we use the "old trick" where "pages" are in divs and navigating is only hiding and showing these divs. The "messy part" in this is that all the divs should be in one page. In Curvy you can manage these divs in own files and include those to main page. 
+We like to use bootstrap because of it's good support for creating responsive applicationa. For creating SPA apps with bootstrap we use the "old trick" where "pages" are in divs and navigating is only hiding and showing these divs. The "meassy part" in this is that all the divs should be in one page. In Curvy you can manage these divs in own files and include those to main page. 
   
 In the spa example there are three files
 * index.html that includes sidebar.html. 
